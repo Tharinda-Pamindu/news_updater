@@ -12,6 +12,13 @@ from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 import requests
 
+# Load environment variables from .env file (for local testing)
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # dotenv not required in GitHub Actions
+
 
 def fetch_tech_news(api_key):
     """
