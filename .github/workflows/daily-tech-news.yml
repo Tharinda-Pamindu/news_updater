@@ -1,3 +1,4 @@
+# GitHub Actions Workflow for Daily Tech News Email
 name: Daily Tech News Email
 
 on:
